@@ -6,8 +6,11 @@
   --accent-color: #2196f3;
 }
 body {
-  font-family: Roboto;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
 }
 
 /* header */
@@ -56,9 +59,6 @@ body {
 .header-logo {
   color: var(--secondary-tytle-color);
 }
-.footer-logo {
-  color: var(--primary-tytle-color);
-}
 
 /* hero */
 
@@ -90,12 +90,13 @@ body {
   color: var(--primary-text-color);
 }
 
-.header-btn {
+.header-btn :hover,
+.header-btn :focus {
   width: 200px;
   height: 41.25px;
   left: 685px;
   top: 368.75px;
-  background: var(--secondary-text-color);
+  color: var(--accent-color);
 }
 
 /* footer */
@@ -113,5 +114,35 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-general {
+  background-color: #2f303a;
+}
+.footer-logo {
   color: var(--primary-tytle-color);
+}
+
+/*------------------Portfolio-------------- */
+
+.portfolio-item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-tytle-color);
+}
+
+.portfolio-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.button :hover,
+.button :focus {
+  color: var(--accent-color);
 }
