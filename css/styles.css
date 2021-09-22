@@ -2,11 +2,13 @@
   --primary-tytle-color: #ffffff;
   --secondary-tytle-color: #212121;
   --primary-text-color: #757575;
-  --secondary-text-color: #2196f3;
   --accent-color: #2196f3;
+  --dark-bg-cl: #2f303a;
+  --grey-bg: #f5f4fa;
 }
 body {
   font-size: 14px;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -15,17 +17,19 @@ body {
 
 /* header */
 .header {
-  background-color: yellow;
+  background-color: ;
 }
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 .list {
   list-style: none;
 }
 
+.header-contakts-link,
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -35,32 +39,35 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-contakts-link:hover,
+.header-contakts-link:focus,
+.current-link {
   color: var(--accent-color);
 }
 
 .header-contakts-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
 .logo {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-logo {
   color: var(--secondary-tytle-color);
 }
 
 /* hero */
+
+.hero {
+  background: var(--dark-bg-cl);
+}
 
 .hero-title {
   font-weight: 900;
@@ -70,38 +77,56 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-tytle-color);
-  background: #2f303a;
 }
 
-.hero-item {
-  font-weight: bold;
+.hero-btn {
+  padding: 10px 32px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-tytle-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* --------------about----------------- */
+
+.about-item {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-tytle-color);
 }
 
-.hero-link {
-  font-weight: normal;
-  font-size: 14px;
+.about-text {
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-.header-btn :hover,
-.header-btn :focus {
-  width: 200px;
-  height: 41.25px;
-  left: 685px;
-  top: 368.75px;
-  color: var(--accent-color);
+.team {
+  background-color: var(--grey-bg);
 }
 
-/* footer */
-.second-title {
-  font-weight: bold;
+.team-item {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team-title {
+  font-size: 16px;
+  color: var(--secondary-tytle-color);
+}
+
+.section-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -109,27 +134,50 @@ body {
   color: var(--secondary-tytle-color);
 }
 
+/* footer */
+
 .adres-text {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primary-tytle-color);
 }
 
 .footer-general {
-  background-color: #2f303a;
+  background-color: var(--dark-bg-cl);
 }
 .footer-logo {
   color: var(--primary-tytle-color);
 }
 
+.footer-addres {
+  font-style: normal;
+}
+
 /*------------------Portfolio-------------- */
+
+.filter-btn {
+  padding: 6px 22px;
+  background: var(--grey-bg);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-tytle-color);
+  font-family: inherit;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.current-btn {
+  background: var(--accent-color);
+  color: var(--secondary-tytle-color);
+}
 
 .portfolio-item {
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-tytle-color);
 }
@@ -137,7 +185,7 @@ body {
 .portfolio-link {
   font-weight: normal;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
