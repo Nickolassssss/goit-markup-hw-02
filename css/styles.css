@@ -6,6 +6,26 @@
   --dark-bg-cl: #2f303a;
   --grey-bg: #f5f4fa;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+image {
+  display: block;
+}
+
 body {
   font-size: 14px;
   font-weight: 400;
@@ -15,9 +35,38 @@ body {
   background-color: var(--primary-white-color);
 }
 
-/* header */
+/* ---------------------header----------------- */
 .header {
   background-color: ;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  margin-right: 40px;
+}
+
+.header-contakt {
+  margin-left: auto;
+  display: flex;
 }
 
 .link {
@@ -27,6 +76,13 @@ body {
 
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-contakts-link,
@@ -69,7 +125,16 @@ body {
   background: var(--dark-bg-cl);
 }
 
+.hero-container {
+  display: flex;
+  width: 1600px;
+  height: 466px;
+  align-items: center;
+}
+
 .hero-title {
+  width: 700px;
+  height: 110px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -80,6 +145,12 @@ body {
 }
 
 .hero-btn {
+  padding-top: 275px;
+  padding-bottom: 135px;
+  padding-right: 700px;
+  padding-left: 700px;
+  width: 250px;
+  height: 55px;
   padding: 10px 32px;
   font-family: inherit;
   font-size: 16px;
@@ -171,7 +242,7 @@ body {
 .filter-btn:focus,
 .current-btn {
   background: var(--accent-color);
-  color: var(--secondary-tytle-color);
+  color: var(--primary-tytle-color);
 }
 
 .portfolio-item {
@@ -188,9 +259,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-}
-
-.button :hover,
-.button :focus {
-  color: var(--accent-color);
 }
