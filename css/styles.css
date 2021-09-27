@@ -132,6 +132,7 @@ body {
 }
 
 .hero-container {
+  display: flex;
   width: 1600px;
   height: 466px;
   align-items: center;
